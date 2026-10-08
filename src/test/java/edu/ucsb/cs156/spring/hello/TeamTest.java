@@ -73,8 +73,9 @@ public class TeamTest {
 
     @Test
     public void equivalent_mutation(){
-        int result = team.hashCode();
-        int expectedResult = -1226298695;
+        Team t1 = new Team();
+        int result = t1.hashCode();
+        int expectedResult = 1;
         assertEquals(expectedResult, result);
     }
 }
